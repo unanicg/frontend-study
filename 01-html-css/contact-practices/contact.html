@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="contact__container">
+      <h1 class="contact__title">Contact us</h1>
+      <form class="form__container">
+        <div class="input-email">
+          <label>Your Email</label>
+          <input type="email" placeholder="email@exmple.com" />
+        </div>
+        <div class="name_container">
+          <div class="input-name">
+            <label>First name</label>
+            <input type="text" />
+          </div>
+          <div class="input-name">
+            <label>Last name</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="input-message">
+          <label>Message</label>
+          <textarea name="Message" rows="10"></textarea>
+        </div>
+        <div class="input-send">
+          <div class="subscribe__container">
+            <input name="Subscribe" type="checkbox" />
+            <label for="Subscribe">Subscribe</label>
+          </div>
+
+          <input type="button" onclick="alert('성공적으로 제출되었습니다.')" value="SEND" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

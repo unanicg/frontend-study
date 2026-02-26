@@ -1,0 +1,260 @@
+body,
+h1,
+p {
+  margin: 0;
+  font-family: pretendard;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  font-weight: 300;
+  color: rgb(49, 49, 49);
+  padding-bottom: 4px;
+}
+
+input[type='email'],
+[type='text'] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  font-family: pretendard;
+  font-weight: 300;
+  padding: 4px;
+}
+
+input[type='button'] {
+  background-color: rgb(255, 145, 0);
+  padding: 8px 40px;
+  border: none;
+  font-size: medium;
+  border-radius: 4px;
+  color: white;
+  font-family: pretendard;
+}
+
+input[type='button']:hover {
+  background-color: aqua;
+  color: black;
+}
+
+input[type='checkbox'] {
+  color: aqua;
+}
+
+textarea {
+  box-sizing: border-box;
+  font-family: pretendard;
+  font-weight: 300;
+  padding: 4px;
+  color: rgb(58, 58, 58);
+}
+
+.navbar__container {
+  height: 50px;
+  display: flex;
+  padding: 0px 24px;
+}
+
+.nav__manu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav__logo {
+  width: 50px;
+}
+
+.img__container {
+  justify-content: start;
+}
+
+.nav__manu--item {
+  padding: 8px;
+}
+
+.contents__container {
+  height: 200px;
+  display: flex;
+  gap: 50px;
+  margin: 20px;
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile__image {
+  width: 50px;
+  display: block;
+  border: 0.5px solid black;
+  border-radius: 100%;
+}
+
+.profile__text__container p {
+  margin: auto;
+}
+
+.thumbnail {
+  width: 500px; /* 원하는 크기 */
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile__name {
+  padding-bottom: 6px;
+}
+
+.post__time {
+  font-size: 12px;
+  color: grey;
+}
+
+.contents__text {
+  padding-top: 16px;
+}
+
+.contents__text h4 {
+  margin: 0px;
+}
+
+.contents__text p {
+  padding-top: 12px;
+  margin: 0px;
+  font-size: 14px;
+  color: grey;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  background-color: aqua;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.background {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(asset/laudry.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: pretendard;
+  line-height: 150%;
+  text-shadow: 0px 2px 16px black;
+}
+
+.button {
+  background-color: azure;
+  font-size: medium;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background-color: aqua;
+}
+
+.subtitle {
+  background-color: aliceblue;
+  padding: 15px 50px;
+  position: relative;
+  top: -40px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.contact__background {
+  padding: 50px 0px;
+}
+
+.contact__container {
+  background-color: aliceblue;
+  width: 500px;
+  margin: auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.contact__title {
+  padding: 0px 0px 16px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.name_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.input-name {
+  width: 100%;
+}
+
+/* .input-message textarea {
+  width: 100%;
+} */
+
+.input-send {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe__container {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__container label {
+  padding-bottom: 0px;
+}

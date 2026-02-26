@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script src="https://kit.fontawesome.com/278177d69b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="admin-container">
+      <div class="grid-container">
+        <nav class="nav-bar">
+          <div class="nav-serchbar">
+            <input type="text" placeholder="Search" />
+            <button class="serch-icon-wrap" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="nav-lg-right">
+            <div class="icon-number-wrap">
+              <i class="fa-solid fa-bell"></i>
+              <div class="icon-number">
+                <p>5</p>
+              </div>
+            </div>
+            <div class="icon-number-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="icon-number">
+                <p>9</p>
+              </div>
+            </div>
+            <h5>Minny Park</h5>
+          </div>
+          <div class="nav-icon-wrap">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="manu-side">
+          <div class="manu-item">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+          </div>
+          <div class="manu-item">
+            <i class="fa-solid fa-headphones"></i>
+            <p>Services</p>
+          </div>
+          <div class="manu-item">
+            <i class="fa-solid fa-flag"></i>
+            <p>Alerts</p>
+          </div>
+          <div class="manu-item">
+            <i class="fa-solid fa-chart-pie"></i>
+            <p>Stats</p>
+          </div>
+        </div>
+        <div class="contents">
+          <h2>Dashboard</h2>
+          <div class="card-container">
+            <div class="card card-primary">
+              <div>
+                <p>Earnings (Monthly)</p>
+                <h3>$400,000</h3>
+              </div>
+              <i class="fa-solid fa-calendar fa-2x"></i>
+            </div>
+            <div class="card card-success">
+              <div>
+                <p>Earnings (Annual)</p>
+                <h3>$800,000</h3>
+              </div>
+              <i class="fa-solid fa-dollar-sign fa-2x"></i>
+            </div>
+            <div class="card card-warning">
+              <div>
+                <p>Task</p>
+                <h3>13</h3>
+              </div>
+              <i class="fa-solid fa-list-check fa-2x"></i>
+            </div>
+            <div class="card card-info">
+              <div>
+                <p>Requests</p>
+                <h3>26</h3>
+              </div>
+              <i class="fa-solid fa-comments fa-2x"></i>
+            </div>
+          </div>
+          <!-- card-container 끝 -->
+          <div class="overview-container">
+            <!-- 그래프 -->
+            <div class="graph-container">
+              <div class="graph-header">
+                <p>Earnings Overview</p>
+              </div>
+              <div class="graph-content">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+            <!-- 차트 -->
+            <div class="tesk-container">
+              <div class="graph-header">
+                <p>Tasks</p>
+                <!-- ← 제목 중복 수정 -->
+              </div>
+              <div class="task-content">
+                <div class="tesk-manu">
+                  <p>Borrowed Items</p>
+                  <div class="tesk-bedge">14</div>
+                </div>
+                <div class="tesk-manu">
+                  <p>Trello requests</p>
+                  <div class="tesk-bedge">2</div>
+                </div>
+                <div class="tesk-manu">
+                  <p>Marked Comments</p>
+                  <div class="tesk-bedge">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- contents 끝 -->
+      </div>
+      <!-- grid-container 끝 -->
+    </div>
+    <!-- admin-container 끝 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById('myChart');
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [
+            {
+              label: 'Monthly',
+              data: [12, 19, 3, 5, 2, 3, 45],
+              borderWidth: 1,
+              fill: true,
+              borderColor: '#8b5cf6',
+              backgroundColor: '#494cb4',
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

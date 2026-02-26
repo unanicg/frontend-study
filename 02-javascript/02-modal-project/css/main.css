@@ -1,0 +1,26 @@
+.alert {
+  background-color: rgb(107, 107, 255);
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  display: none;
+  width: 300px;
+}
+
+.alert-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.alert button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}

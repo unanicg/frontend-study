@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../layout02-practics/layout.css" />
+  </head>
+  <body>
+    <nav class="navbar__container">
+      <div class="nav__manu img__container" style="flex-grow: 1">
+        <img
+          class="nav__logo"
+          src="https://res.cloudinary.com/vistaprint/images/f_auto,q_auto/v1706191816/ideas-and-advice-prod/blogadmin/Screenshot-2024-01-25-at-15.09.28/Screenshot-2024-01-25-at-15.09.28.png?_i=AA"
+          alt=""
+        />
+      </div>
+      <div class="nav__manu" style="flex-grow: 2">
+        <a href="#" class="nav__manu--item">products</a>
+        <a href="#" class="nav__manu--item">service</a>
+      </div>
+    </nav>
+
+    <div class="background">
+      <h4 class="title">
+        문 앞에 두기만 하면 끝,
+        <br />
+        세탁은 저희가 완성할께요!
+      </h4>
+      <button class="button">앱 다운로드</button>
+    </div>
+    <div class="subtitle">
+      <h3>내 집앞 세탁소</h3>
+      <p>세탁 시간을 아껴주는 똑똑한 비대면 세탁 서비스입니다. <br />내 집 앞에서 세탁 서비스를 경험해 보세요.</p>
+    </div>
+    <div class="contact__background">
+      <div class="contact__container">
+        <h1 class="contact__title">Contact us</h1>
+        <form class="form__container">
+          <div class="input-email">
+            <label>Your Email</label>
+            <input type="email" placeholder="email@exmple.com" />
+          </div>
+          <div class="name_container">
+            <div class="input-name">
+              <label>First name</label>
+              <input type="text" />
+            </div>
+            <div class="input-name">
+              <label>Last name</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="input-name">
+            <label>Message</label>
+            <textarea class="input-name" rows="10"></textarea>
+          </div>
+          <div class="input-send">
+            <div class="subscribe__container">
+              <input id="Subscribe" type="checkbox" />
+              <label for="Subscribe">Subscribe</label>
+            </div>
+
+            <input type="button" onclick="alert('성공적으로 제출되었습니다.')" value="SEND" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- CSS 클래스명 지정할때 구조 div에는 박스속성을 넣는거고 input에는 인풋 디자인을 넣는거. div로 디자인을 하는게 아님. -->
+<!-- 레이블과 인풋의 관계를 for와 id로 연결해서 묶을 수 있음 -->

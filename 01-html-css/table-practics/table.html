@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div class="table__container">
+      <h1>Your shopping cart</h1>
+      <div class="contents__container">
+        <table>
+          <thead>
+            <tr class="table__head">
+              <th></th>
+              <th style="text-align: left" colspan="1">ITEM</th>
+              <th>AMOUNT</th>
+              <th>PRICE</th>
+              <th>TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__img">
+                <img
+                  src="https://www.sony.co.kr/image/760bbcc1c6ab841ec5f28b080d652e20?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9"
+                  alt=""
+                />
+              </td>
+              <td class="table__itme">
+                <img
+                  style="width: 50px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg"
+                  alt=""
+                />
+                FE 70-200 mm f2.8GM OSS
+              </td>
+              <td>1</td>
+              <td>€ 1979.00</td>
+              <td>€ 1979.00</td>
+            </tr>
+            <tr>
+              <td class="table__img">
+                <img
+                  src="https://www.sony.com/image/516d49a2c984f9160184c7e6c18e5db4?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9"
+                  alt=""
+                />
+              </td>
+              <td class="table__itme">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg" alt="" />
+                Sonnar T* E 24mm F1.8 ZA
+              </td>
+              <td>1</td>
+              <td>€ 1979.00</td>
+              <td>€ 1979.00</td>
+            </tr>
+            <tr>
+              <td class="total__sum" colspan="5">€ 2968.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tfoot">
+        <a href="#">Edit your shopping cart</a>
+        <button onclick="alert('구매하시겠습니까?')" style="cursor: pointer">Choose payment method</button>
+      </div>
+    </div>
+  </body>
+</html>

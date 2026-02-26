@@ -1,0 +1,158 @@
+body {
+  margin: auto;
+  max-width: 1200px;
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4b4b4b;
+}
+
+button:hover {
+  background-color: #4e61c0;
+}
+
+.hero-bg {
+  background-image: linear-gradient(to bottom, #4a94d7, #4e61c0);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.hero-contents {
+  color: white;
+}
+
+.hero-contents img {
+  margin: auto;
+  width: 300px;
+}
+
+.portfolio-contents {
+  text-align: center;
+  padding: 80px;
+}
+
+.service-container {
+  background-color: #4e61c0;
+  padding: 42px;
+  color: white;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 42px;
+}
+
+.social-wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 42px;
+}
+
+.icon-item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  color: #4e61c0;
+  background-color: white;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #4e61c0;
+}
+
+.img-grid {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.contents-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.title-wrap {
+  color: white;
+  padding: 40px;
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: white solid 0px;
+  box-sizing: border-box;
+  transition: border 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.overlay:hover {
+  border: white solid 15px;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 528px) {
+  .hero-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-contents {
+    max-width: 400px;
+    text-align: center;
+  }
+  .icon-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-grid {
+    grid-template-columns: auto;
+  }
+}

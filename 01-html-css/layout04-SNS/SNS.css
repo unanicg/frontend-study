@@ -1,0 +1,24 @@
+p {
+  margin: 0;
+}
+
+.blue {
+  color: #6fbaf8;
+}
+
+.ud-line {
+  background-color: #848484;
+}
+.bg-blue {
+  background-color: #6fbaf8;
+}
+
+.tab-active {
+  border-bottom: 5px solid #0d6efd !important;
+}
+
+@media (min-width: 992px) {
+  .border-lg-start {
+    border-left: 1px solid #dee2e6;
+  }
+}
