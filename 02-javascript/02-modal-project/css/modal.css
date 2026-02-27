@@ -1,0 +1,136 @@
+:root {
+  /* color */
+  --bg-light: #fff;
+  --bg-grey: #f9fafb;
+  --bg-grey-2: #f5f5f5;
+  --primary: #494cb4;
+  --nutral-w: #fff;
+  --nutral-k: #000;
+  --nutral-g: #888;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-info: #8b5cf6;
+  --color-alram: #f65c5c;
+
+  /* spacing */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+p,
+h5 {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 100px;
+  border: 1px solid var(--nutral-g);
+  color: var(--nutral-g);
+  padding: var(--space-sm) var(--space-md);
+  font-size: 12px !important;
+  cursor: pointer;
+  &:hover {
+    background-color: #10b981;
+  }
+}
+
+.primary {
+  color: var(--nutral-w);
+  background-color: var(--primary);
+}
+
+.light {
+  border: 0.5px solid var(--nutral-g);
+  background-color: var(--bg-light);
+
+  &:hover {
+    background-color: var(--bg-grey-2);
+  }
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  i {
+    color: var(--nutral-g);
+  }
+
+  &:hover i {
+    color: var(--color-alram);
+  }
+}
+
+.modal-container {
+  margin: auto;
+  width: 400px;
+  background-color: var(--bg-grey);
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity.5s,
+    transform 0.5s;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content-gird {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: var(--space-md) 0;
+}
+
+.modal-content-wrap {
+  background-color: var(--bg-light);
+  padding: var(--space-md);
+  border-radius: 8px;
+  border: 1px solid var(--nutral-g);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background-color: var(--color-success);
+  }
+
+  &:active {
+    background-color: var(--primary);
+    color: var(--nutral-w);
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-top: var(--space-sm);
+  }
+}
+
+.modal-footer {
+  text-align: right;
+}
